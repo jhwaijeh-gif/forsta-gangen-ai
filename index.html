@@ -113,7 +113,7 @@
   .step p+p{margin-top:10px;}
   /* Telefon: numret ovanför rubriken så att text och bilder får hela bredden (Judes besked 2026-10-13) */
   @media(max-width:640px){
-    .step{grid-template-columns:1fr;gap:12px;padding:26px 0;}
+    .step{grid-template-columns:minmax(0,1fr);gap:12px;padding:26px 0;}
     .step-n{width:30px;height:30px;font-size:13px;}
   }
   .kbd{font-family:var(--mono);font-weight:600;font-size:13px;background:var(--bg);border:1px solid var(--border);
@@ -333,7 +333,7 @@
           <h3>Ge AI:n så mycket kontext om dig som möjligt</h3>
           <p>Klistra in prompten nedan i en ny chatt och skicka den. AI:n förstår då att den ska lära känna dig och ställa frågor.</p>
           <figure class="fig">
-            <img src="images/claude-prompt-bar.png" alt="Claudes textruta där du klistrar in prompten">
+            <img src="images/claude-prompt-bar.png?v=2" alt="Claudes textruta där du klistrar in prompten">
             <figcaption>Steg 2 · Klistra in i textrutan i Claude eller ChatGPT</figcaption>
           </figure>
           <div class="prompt">
@@ -392,7 +392,7 @@ Write both documents as clear bullet points, in Swedish, so I can paste them int
           </figure>
           <p><b>I Claude</b> gör du samma sak, men lite mer för hand. Klistra in prompten nedan. Claude går igenom verktygen du kopplade i steg 3, tittar på hur du skriver mejl, meddelanden och texter, och gör det till en skill som den använder varje gång den skriver något åt dig.</p>
           <figure class="fig">
-            <img src="images/claude-prompt-bar.png" alt="Claudes textruta där du klistrar in prompten">
+            <img src="images/claude-prompt-bar.png?v=2" alt="Claudes textruta där du klistrar in prompten">
             <figcaption>Steg 4 · Klistra in i textrutan i Claude</figcaption>
           </figure>
           <div class="prompt">
