@@ -111,6 +111,11 @@
   .step p{font-size:15.5px;color:var(--text);line-height:1.62;}
   .step p b{color:var(--ink);font-weight:600;}
   .step p+p{margin-top:10px;}
+  /* Telefon: numret ovanför rubriken så att text och bilder får hela bredden (Judes besked 2026-10-13) */
+  @media(max-width:640px){
+    .step{grid-template-columns:1fr;gap:12px;padding:26px 0;}
+    .step-n{width:30px;height:30px;font-size:13px;}
+  }
   .kbd{font-family:var(--mono);font-weight:600;font-size:13px;background:var(--bg);border:1px solid var(--border);
     border-radius:6px;padding:2px 8px;color:var(--ink);}
   .crumbs{margin-top:14px;display:flex;flex-wrap:wrap;align-items:center;gap:7px;}
